@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Generator.gd" type="Script" id=1]
+[ext_resource path="res://DemoTileset.tres" type="TileSet" id=2]
+
+[node name="Generator" type="TileMap"]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+format = 1
+script = ExtResource( 1 )
+cull = 0.5
+
+[node name="Rooms" type="Node" parent="."]
