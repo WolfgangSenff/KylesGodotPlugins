@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Generator.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Demo.gd" type="Script" id=2]
+[ext_resource path="res://DemoPlayer.tscn" type="PackedScene" id=3]
+
+[node name="Demo" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Generator" parent="." instance=ExtResource( 1 )]
+space_between_rooms = 1
+cull = 0.6
+max_corridor_width = 8
+min_corridor_width = 3
+is_debug = false
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
