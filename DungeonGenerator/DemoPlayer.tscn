@@ -4,8 +4,8 @@
 [ext_resource path="res://DemoPlayer.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 4.85911
-height = 2.14311
+radius = 8.0
+height = 5.0
 
 [sub_resource type="Animation" id=2]
 resource_name = "Idle"
@@ -46,11 +46,13 @@ speed = 150.0
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0.129799, -1.55762 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 vframes = 2
 hframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 0.773022 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -60,4 +62,3 @@ anims/Walk = SubResource( 3 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-zoom = Vector2( 0.5, 0.5 )
