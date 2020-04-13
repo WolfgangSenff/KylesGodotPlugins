@@ -17,7 +17,6 @@ func _physics_process(delta):
         direction += Vector2.UP
     
     if direction != Vector2.ZERO:
-        print("Player pos before move: " + str(position))
         rotation = direction.normalized().angle()
         move_and_slide(direction.normalized() * speed)
         if anim_player.current_animation == "Idle" or !anim_player.is_playing():
