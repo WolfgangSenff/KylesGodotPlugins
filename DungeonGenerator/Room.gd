@@ -1,5 +1,4 @@
 extends RigidBody2D
-class_name Room
 
 var size
 
